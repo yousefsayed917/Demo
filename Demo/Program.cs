@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Linq.Expressions;
+
+namespace Demo
 {
     //Class -- Struct -- Enum -- Interface
     internal class Program
@@ -108,6 +110,152 @@
             //bool flag = Convert.ToBoolean(x);
             //Console.WriteLine(flag);    // Exception
 
+            #endregion
+            #endregion
+            #region Session03
+            #region fractions and discard
+            ////defualt data type of fractions is double
+            //float x = 2.4f;
+            //decimal y = 2.5m;
+            ////discard => for readability
+            //long num = 100_000_000_000;
+            //Console.WriteLine(num);
+            #endregion
+            #region implicit casting and explicit casting (value type)
+            ////implicit casting save cating 
+            //int x = 10;
+            //long y = x; 
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
+            //int z = 3;
+            //double d = z;
+            //Console.WriteLine(z);
+            //Console.WriteLine(d);
+            ////explicit casting un save casting
+            //long a = 100000000;//over flow
+            //checked
+            //{
+            //    int b = (int)a;
+            //    unchecked
+            //    {
+            //        Console.WriteLine(y);
+            //    }
+            //}
+            //Console.WriteLine(x);
+
+            //double c = 3.5;
+            //int e = (int)c; //loss of data 
+            //Console.WriteLine(c);
+            //Console.WriteLine(e);
+            #endregion
+            #region operators
+            #region unary
+            ////work on one operand
+            //int x = 5;
+            ////prefix (increment or decrement then print)
+            //++x;
+            //--x;
+            ////postfix (print then increment or decrement)
+            //x++;
+            //x--;
+            #endregion
+            #region binary
+            ////work on two operands
+            //int Sum, Mul, Div, Sub, Mod;
+            //int x = 4, y=3;
+            //Sum = x + y;
+            //Mul = x * y;
+            //Div = x / y;
+            //Sub = x - y;
+            //Mod = x % y;
+            //Console.WriteLine(Sum);
+            //Console.WriteLine(Mul);
+            //Console.WriteLine(Div); 
+            //Console.WriteLine(Sub);
+            //Console.WriteLine(Mod);
+
+            #endregion
+            #region assignment
+            //int x = 7;
+            //x += 3;//x=x+3
+            //x -= 3;//x=x-3
+            //x *= 3;//x=x*3
+            //x /= 3;//x=x/3
+            //x %= 3;//x=x%3
+            #endregion
+            #region relational
+            //int x = 7, y = 6;
+            //Console.WriteLine(x == y);
+            //Console.WriteLine(x != y);
+            //Console.WriteLine(x < y);
+            //Console.WriteLine(x > y);
+            //Console.WriteLine(x >= y);
+            //Console.WriteLine(x <= y);
+            #endregion
+            #region logical
+            //Console.WriteLine(!false);
+            //Console.WriteLine(false && true);//false
+            //Console.WriteLine(false || true);//true
+            #endregion
+            #region beetwise
+            //Console.WriteLine(false & true);
+            //Console.WriteLine(false | true);
+            #endregion
+            #region ternary
+            //int x = 3, y = 6;
+            //string message = (y > x) ? "y is more than x" : (x > y) ? "x is more than y" : "y and x are equal";
+            #endregion
+            #endregion
+            #region operator priority
+            //1- Unary(prefix)
+            //2- ()
+            //3- * / %
+            //4- + -
+            #endregion
+            #region string formating
+            //int x = 4, y = 7;
+            //string message = "Equation is : " + x + "+" + y + "=" + x + y;
+            //Console.WriteLine(message); // not recommended
+            ////coposite formating 
+            //message = string.Format("Equation is :{0}+{1}={2}", x, y, x + y);
+            //// string interpolation  (the pest)
+            ////using $
+            //message = $"Equation is : {x}+{y}={x + y}";
+            #endregion
+            #region control statements{if - switch}
+            #region if 
+            // line by line
+            //Console.WriteLine("enter a month number");
+            //int MonthNumber = int.Parse(Console.ReadLine()!);
+            //if (MonthNumber == 1)
+            //    Console.WriteLine("January");
+            //else if (MonthNumber == 2)
+            //    Console.WriteLine("fabruary");
+            //else if (MonthNumber == 3)
+            //    Console.WriteLine("march");
+            //else
+            //    Console.WriteLine("not in first quarter");
+            #endregion
+            #region switch
+            ////jump table
+            //Console.WriteLine("enter a month number");
+            //int MonthNumber = int.Parse(Console.ReadLine()!);
+            //switch (MonthNumber)
+            //{
+            //    case 1:
+            //        Console.WriteLine("January");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("fabruary");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("march");
+            //        break;
+            //    default:
+            //        Console.WriteLine("not in first quarter");
+            //        break;
+            //}
+            #endregion
             #endregion
             #endregion
         }
